@@ -5,20 +5,43 @@
   "version": "0.0.1",
   "publisher": "Kutimoti",
   "engines": {
-    "vscode": "^1.26.0"
+    "vscode": "^1.20.0"
   },
   "categories": [
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.sayHello"
+    "*"
   ],
   "main": "./extension",
   "contributes": {
     "commands": [
       {
-        "command": "extension.sayHello",
-        "title": "Hello World"
+        "command": "AtCoderSubmitter.Login",
+        "title": "AtCoder Login"
+      },
+      {
+        "command": "AtCoderSubmitter.Submit",
+        "title": "AtCoder Submit"
+      }
+    ],
+    "configuration": [
+      {
+        "title": "AtCoderSubmitter",
+        "properties": {
+          "atcodersubmitter.contest_id": {
+            "type": "string",
+            "default": "",
+            "description": ""
+          }
+        }
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "AtCoderSubmitter.Submit",
+        "key": "ctrl+shift+s",
+        "when": "editorTextFocus"
       }
     ]
   },
@@ -34,6 +57,7 @@
     "@types/mocha": "^2.2.42"
   },
   "dependencies": {
-    "cheerio-httpcli": "^0.7.3"
+    "cheerio-httpcli": "^0.7.3",
+    "opn": "^5.3.0"
   }
 }
