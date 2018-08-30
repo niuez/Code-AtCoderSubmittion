@@ -4,6 +4,10 @@
   "description": "",
   "version": "0.0.1",
   "publisher": "Kutimoti",
+  "repository": {
+    "type": "git",
+    "url" : "https://github.com/Kutimotitokura/Code-AtCoderSubmittion"
+  },
   "engines": {
     "vscode": "^1.20.0"
   },
@@ -33,6 +37,11 @@
             "type": "string",
             "default": "",
             "description": ""
+          },
+          "atcodersubmitter.language_id":{
+            "type":"integer",
+            "default":"3003",
+            "description": "language_id you use"
           }
         }
       }

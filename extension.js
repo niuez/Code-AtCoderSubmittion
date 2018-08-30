@@ -13,7 +13,7 @@ var AtCoderLogin = function(){
         };
 
         result.$('#main-container > div > div > form').submit(loginInfo,function(err,$,res,body){
-            vscode.window.showInformationMessage('loggin!');
+            vscode.window.showInformationMessage('AtCoderSubmitter loggin!');
         })
     });
 }
@@ -47,7 +47,7 @@ var AtCoderSubmitNormal = function(){
             placeHolder: 'example: arc101_a'
         }).then(function (problem_id) {
             if (problem_id == undefined) return;
-            var language_id = 3003
+            var language_id = vscode.workspace.getConfiguration('atcodersubmitter').get('language_id');
             AtCoderSubmitSource(contest_id, problem_id, language_id, vscode.window.activeTextEditor.document.getText());
         })
     });
@@ -58,7 +58,7 @@ var AtCoderSubmitContestMode = function(contest_id){
         placeHolder: 'a,b,c,d,...'
     }).then(function (problem) {
         if (problem == undefined) return;
-        var language_id = 3003;
+        var language_id = vscode.workspace.getConfiguration('atcodersubmitter').get('language_id');
         AtCoderSubmitSource(contest_id,`${contest_id}_${problem}`,language_id,vscode.window.activeTextEditor.document.getText());
     });
 }
