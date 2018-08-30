@@ -1,65 +1,92 @@
 # code-atcodersubmitter README
 
-This is the README for your extension "code-atcodersubmitter". After writing up a brief description, we recommend including the following sections.
+This is ALPHAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
-## Features
+If you find a bug , tell me by [Twitter](https://twitter.com/Kutimoti_T) or throw the [issue](https://github.com/Kutimotitokura/Code-AtCoderSubmittion/issues)
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## setting
 
-For example if there is an image subfolder under your extension project workspace:
+set the environment variables `ATCODER_USERNAME` and `ATCODER_PASSWORD`.
 
-\!\[feature X\]\(images/feature-x.png\)
+環境変数に`ATCODER_USERNAME`と`ATCODER_PASSWORD`を設定してください
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+set your programming language to atcodersubmitter.language_id.
 
-## Requirements
+```html
+<option value="3003" data-mime="text/x-c++src">C++14 (GCC 5.4.1)</option>
+<option value="3001" data-mime="text/x-sh">Bash (GNU bash v4.3.11)</option>
+<option value="3002" data-mime="text/x-csrc">C (GCC 5.4.1)</option>
+<option value="3004" data-mime="text/x-csrc">C (Clang 3.8.0)</option>
+<option value="3005" data-mime="text/x-c++src">C++14 (Clang 3.8.0)</option>
+<option value="3006" data-mime="text/x-csharp">C# (Mono 4.6.2.0)</option>
+<option value="3007" data-mime="text/x-clojure">Clojure (1.8.0)</option>
+<option value="3008" data-mime="text/x-common-lisp">Common Lisp (SBCL 1.1.14)</option>
+<option value="3009" data-mime="text/x-d">D (DMD64 v2.070.1)</option>
+<option value="3010" data-mime="text/x-d">D (LDC 0.17.0)</option>
+<option value="3011" data-mime="text/x-d">D (GDC 4.9.4)</option>
+<option value="3012" data-mime="text/x-fortran">Fortran (gfortran v4.8.4)</option>
+<option value="3013" data-mime="text/x-go">Go (1.6)</option>
+<option value="3014" data-mime="text/x-haskell">Haskell (GHC 7.10.3)</option>
+<option value="3015" data-mime="text/x-java">Java7 (OpenJDK 1.7.0)</option>
+<option value="3016" data-mime="text/x-java">Java8 (OpenJDK 1.8.0)</option>
+<option value="3017" data-mime="text/javascript">JavaScript (node.js v5.12)</option>
+<option value="3018" data-mime="text/x-ocaml">OCaml (4.02.3)</option>
+<option value="3019" data-mime="text/x-pascal">Pascal (FPC 2.6.2)</option>
+<option value="3020" data-mime="text/x-perl">Perl (v5.18.2)</option>
+<option value="3021" data-mime="text/x-php">PHP (5.6.30)</option>
+<option value="3022" data-mime="text/x-python">Python2 (2.7.6)</option>
+<option value="3023" data-mime="text/x-python">Python3 (3.4.3)</option>
+<option value="3024" data-mime="text/x-ruby">Ruby (2.3.3)</option>
+<option value="3025" data-mime="text/x-scala">Scala (2.11.7)</option>
+<option value="3026" data-mime="text/x-scheme">Scheme (Gauche 0.9.3.3)</option>
+<option value="3027" data-mime="text/plain">Text (cat)</option>
+<option value="3028" data-mime="text/x-vb">Visual Basic (Mono 4.0.1)</option>
+<option value="3029" data-mime="text/x-c++src">C++ (GCC 5.4.1)</option>
+<option value="3030" data-mime="text/x-c++src">C++ (Clang 3.8.0)</option>
+<option value="3501" data-mime="text/x-objectivec">Objective-C (GCC 5.3.0)</option>
+<option value="3502" data-mime="text/x-objectivec">Objective-C (Clang3.8.0)</option>
+<option value="3503" data-mime="text/x-swift">Swift (swift-2.2-RELEASE)</option>
+<option value="3504" data-mime="text/x-rust">Rust (1.15.1)</option>
+<option value="3505" data-mime="text/x-sh">Sed (GNU sed 4.2.2)</option>
+<option value="3506" data-mime="text/x-sh">Awk (mawk 1.3.3)</option>
+<option value="3507" data-mime="text/x-brainfuck">Brainfuck (bf 20041219)</option>
+<option value="3508" data-mime="text/x-sml">Standard ML (MLton 20100608)</option>
+<option value="3509" data-mime="text/x-python">PyPy2 (5.6.0)</option>
+<option value="3510" data-mime="text/x-python">PyPy3 (2.4.0)</option>
+<option value="3511" data-mime="text/x-crystal">Crystal (0.20.5)</option>
+<option value="3512" data-mime="text/x-fsharp">F# (Mono 4.0)</option>
+<option value="3513" data-mime="text/x-unlambda">Unlambda (0.1.3)</option>
+<option value="3514" data-mime="text/x-lua">Lua (5.3.2)</option>
+<option value="3515" data-mime="text/x-lua">LuaJIT (2.0.4)</option>
+<option value="3516" data-mime="text/x-moonscript">MoonScript (0.5.0)</option>
+<option value="3517" data-mime="text/x-ceylon">Ceylon (1.2.1)</option>
+<option value="3518" data-mime="text/x-julia">Julia (0.5.0)</option>
+<option value="3519" data-mime="text/x-octave">Octave (4.0.2)</option>
+<option value="3520" data-mime="text/x-nim">Nim (0.13.0)</option>
+<option value="3521" data-mime="text/typescript">TypeScript (2.1.6)</option>
+<option value="3522" data-mime="text/x-perl">Perl6 (rakudo-star 2016.01)</option>
+<option value="3523" data-mime="text/x-kotlin">Kotlin (1.0.0)</option>
+<option value="3524" data-mime="text/x-php">PHP7 (7.0.15)</option>
+<option value="3525" data-mime="text/x-cobol">COBOL - Fixed (OpenCOBOL 1.1.0)</option>
+<option value="3526" data-mime="text/x-cobol">COBOL - Free (OpenCOBOL 1.1.0)</option>
+```
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## commands(Ctrl + Shift + p)
 
-## Extension Settings
+### AtCoder Login
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+Login to AtCoder.
 
-For example:
+### AtCoder Submit(Ctrl + Shift + s)
 
-This extension contributes the following settings:
+Submit your current code to AtCoder.
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+contest_id...contest id.(for example...the contest_id of https://beta.atcoder.jp/contests/practice is practice)
+problem_id...problem id.(for example...the problem_id of https://beta.atcoder.jp/contests/practice/tasks/practice_1 is practice_1)
 
-## Known Issues
+## Contest Mode
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+If you set `atcodersubmitter.contest_id` (for example : arc101,agc010...) , AtCoderSubmitter become **Contest Mode**
 
-## Release Notes
+On Contest Mode, you can submit without selecting contest_id and only input the problem alphabet.
 
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
