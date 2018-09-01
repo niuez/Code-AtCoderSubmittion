@@ -32,15 +32,12 @@ var AtCoderSubmitSource = function(contest_id,problem_id,language_id,source){
                 var submission_url = $('table > tbody > tr:nth-child(1) > td:nth-child(8) > a').attr('href');
                 vscode.window.showInformationMessage('submit!');
                 //opn(`https://beta.atcoder.jp/contests/${contest_id}/submissions/me`)
-                console.log($('table > tbody > tr:nth-child(1) > td:nth-child(8)').text());
 
-                console.log(submission_url);
                 if(submission_url == undefined) return;
                 submission_url = 'https://beta.atcoder.jp' + submission_url
                 var get_submission = function(){
                     client.fetch(submission_url,function(err,$,res,body){
                         var judge = $('table > tr:nth-child(7) > td').text();
-                        console.log(judge);
                         if(judge == undefined) return;
                         if(judge.includes('/') || judge.includes('WJ')){
                             setTimeout(get_submission,1500);
