@@ -45,7 +45,7 @@ var AtCoderSubmitSource = function(contest_id,problem_id,language_id,source){
                         }
                         vscode.window.showInformationMessage('your submit is ' + judge,"Detail","Close").then(function(res){
                             if(res == undefined) return;
-                            if(res = "Detail"){
+                            if(res == "Detail"){
                                 opn(submission_url);
                             }
                         });
